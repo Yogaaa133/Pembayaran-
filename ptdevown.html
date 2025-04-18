@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PT FutureTech - Tentang Kami</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00ffff;
+      padding-left: 15px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #ddd;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15px;
+      padding: 25px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .role {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    /* Particle Background */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>FutureTech Store</h1>
+    <p>Solusi Digital Masa Depan</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Tentang Kami</h2>
+    <p class="about-text">
+      FutureTech adalah perusahaan digital yang fokus pada pengembangan teknologi masa depan seperti pembuatan website, hosting, game seperti, samp, minecraft, sosial media lainyah, dan pengembangan software custom.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Visi</h2>
+    <p class="about-text">
+      Menjadi penyedia layanan digital nomor satu di Indonesia yang memberikan inovasi dan solusi teknologi terbaik.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Misi</h2>
+    <ul class="about-text">
+      <li>Menghadirkan layanan terbaik di bidang digital.</li>
+      <li>Mendukung UMKM dan bisnis lokal melalui solusi teknologi.</li>
+      <li>Terus berinovasi dalam pengembangan layanan digital.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Owner & Developer Kami</h2>
+    <div class="container">
+      <div class="card">
+        <img class="avatar" src="team.jpg" alt="Owner"/>
+        <div class="name">Zyy xyz</div>
+        <div class="role">Owner Utama</div>
+      </div>
+
+      <div class="card">
+        <img class="avatar" src="team.jpg" alt="Developer"/>
+        <div class="name">Muhammad Prayoga Juni alpiansyah</div>
+        <div class="role">Programer Developer</div>
+      </div>
+
+      <div class="card">
+        <img class="avatar" src="team.jpg" alt="Frontend"/>
+        <div class="name">Asep</div>
+        <div class="role">Wakil owner </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 40 },
+        size: { value: 3 },
+        move: { speed: 1 },
+        color: { value: '#ffffff' },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.2,
+          width: 1
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
